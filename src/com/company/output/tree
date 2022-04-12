@@ -1,0 +1,251 @@
+Program
+    |-ProgramHead
+    |     |-PROGRAM
+    |     |-ProgramName
+    |     |     |-ID(sd)
+    |-DeclarePart
+    |     |-TypeDec
+    |     |     |-TypeDeclaration
+    |     |     |     |-TYPE
+    |     |     |     |-TypeDecList
+    |     |     |     |     |-TypeId
+    |     |     |     |     |     |-ID(i)
+    |     |     |     |     |-EQ
+    |     |     |     |     |-TypeName
+    |     |     |     |     |     |-BaseType
+    |     |     |     |     |     |     |-INTEGER
+    |     |     |     |     |-SEMI
+    |     |     |     |     |-TypeDecMore
+    |     |     |     |     |     |-TypeDecList
+    |     |     |     |     |     |     |-TypeId
+    |     |     |     |     |     |     |     |-ID(sarray)
+    |     |     |     |     |     |     |-EQ
+    |     |     |     |     |     |     |-TypeName
+    |     |     |     |     |     |     |     |-StructureType
+    |     |     |     |     |     |     |     |     |-ArrayType
+    |     |     |     |     |     |     |     |     |     |-ARRAY
+    |     |     |     |     |     |     |     |     |     |-LMIDPAREN
+    |     |     |     |     |     |     |     |     |     |-Low
+    |     |     |     |     |     |     |     |     |     |     |-INTC(0)
+    |     |     |     |     |     |     |     |     |     |-UNDERANGE
+    |     |     |     |     |     |     |     |     |     |-Top
+    |     |     |     |     |     |     |     |     |     |     |-INTC(5)
+    |     |     |     |     |     |     |     |     |     |-RMIDPAREN
+    |     |     |     |     |     |     |     |     |     |-OF
+    |     |     |     |     |     |     |     |     |     |-BaseType
+    |     |     |     |     |     |     |     |     |     |     |-INTEGER
+    |     |     |     |     |     |     |-SEMI
+    |     |     |     |     |     |     |-TypeDecMore
+    |     |-VarDec
+    |     |     |-VarDeclaration
+    |     |     |     |-VAR
+    |     |     |     |-VarDecList
+    |     |     |     |     |-TypeName
+    |     |     |     |     |     |-ID(i)
+    |     |     |     |     |-VarIdList
+    |     |     |     |     |     |-ID(x)
+    |     |     |     |     |     |-VarIdMore
+    |     |     |     |     |-SEMI
+    |     |     |     |     |-VarDecMore
+    |     |     |     |     |     |-VarDecList
+    |     |     |     |     |     |     |-TypeName
+    |     |     |     |     |     |     |     |-ID(sarray)
+    |     |     |     |     |     |     |-VarIdList
+    |     |     |     |     |     |     |     |-ID(y)
+    |     |     |     |     |     |     |     |-VarIdMore
+    |     |     |     |     |     |     |-SEMI
+    |     |     |     |     |     |     |-VarDecMore
+    |     |     |     |     |     |     |     |-VarDecList
+    |     |     |     |     |     |     |     |     |-TypeName
+    |     |     |     |     |     |     |     |     |     |-BaseType
+    |     |     |     |     |     |     |     |     |     |     |-INTEGER
+    |     |     |     |     |     |     |     |     |-VarIdList
+    |     |     |     |     |     |     |     |     |     |-ID(ss)
+    |     |     |     |     |     |     |     |     |     |-VarIdMore
+    |     |     |     |     |     |     |     |     |-SEMI
+    |     |     |     |     |     |     |     |     |-VarDecMore
+    |     |-ProcDec
+    |     |     |-ProcDeclaration
+    |     |     |     |-PROCEDURE
+    |     |     |     |-ProcName
+    |     |     |     |     |-ID(sd)
+    |     |     |     |-LPAREN
+    |     |     |     |-ParamList
+    |     |     |     |     |-ParamDecList
+    |     |     |     |     |     |-Param
+    |     |     |     |     |     |     |-TypeName
+    |     |     |     |     |     |     |     |-BaseType
+    |     |     |     |     |     |     |     |     |-INTEGER
+    |     |     |     |     |     |     |-FormList
+    |     |     |     |     |     |     |     |-ID(a)
+    |     |     |     |     |     |     |     |-FidMore
+    |     |     |     |     |     |-ParamMore
+    |     |     |     |-RPAREN
+    |     |     |     |-SEMI
+    |     |     |     |-ProcDecPart
+    |     |     |     |     |-DeclarePart
+    |     |     |     |     |     |-TypeDec
+    |     |     |     |     |     |-VarDec
+    |     |     |     |     |     |-ProcDec
+    |     |     |     |-ProcBody
+    |     |     |     |     |-ProgramBody
+    |     |     |     |     |     |-BEGIN
+    |     |     |     |     |     |-StmList
+    |     |     |     |     |     |     |-Stm
+    |     |     |     |     |     |     |     |-OutputStm
+    |     |     |     |     |     |     |     |     |-WRITE
+    |     |     |     |     |     |     |     |     |-LPAREN
+    |     |     |     |     |     |     |     |     |-Exp
+    |     |     |     |     |     |     |     |     |     |-Term
+    |     |     |     |     |     |     |     |     |     |     |-Factor
+    |     |     |     |     |     |     |     |     |     |     |     |-Variable
+    |     |     |     |     |     |     |     |     |     |     |     |     |-ID(a)
+    |     |     |     |     |     |     |     |     |     |     |     |     |-VariMore
+    |     |     |     |     |     |     |     |     |     |     |-OtherFactor
+    |     |     |     |     |     |     |     |     |     |-OtherTerm
+    |     |     |     |     |     |     |     |     |-RPAREN
+    |     |     |     |     |     |     |-StmMore
+    |     |     |     |     |     |-END
+    |     |     |     |-ProcDecMore
+    |-ProgramBody
+    |     |-BEGIN
+    |     |-StmList
+    |     |     |-Stm
+    |     |     |     |-ID(ss)
+    |     |     |     |-AssCall
+    |     |     |     |     |-AssignmentRest
+    |     |     |     |     |     |-VariMore
+    |     |     |     |     |     |-ASSIGN
+    |     |     |     |     |     |-Exp
+    |     |     |     |     |     |     |-Term
+    |     |     |     |     |     |     |     |-Factor
+    |     |     |     |     |     |     |     |     |-INTC(0)
+    |     |     |     |     |     |     |     |-OtherFactor
+    |     |     |     |     |     |     |-OtherTerm
+    |     |     |-StmMore
+    |     |     |     |-SEMI
+    |     |     |     |-StmList
+    |     |     |     |     |-Stm
+    |     |     |     |     |     |-LoopStm
+    |     |     |     |     |     |     |-WHILE
+    |     |     |     |     |     |     |-RelExp
+    |     |     |     |     |     |     |     |-Exp
+    |     |     |     |     |     |     |     |     |-Term
+    |     |     |     |     |     |     |     |     |     |-Factor
+    |     |     |     |     |     |     |     |     |     |     |-Variable
+    |     |     |     |     |     |     |     |     |     |     |     |-ID(ss)
+    |     |     |     |     |     |     |     |     |     |     |     |-VariMore
+    |     |     |     |     |     |     |     |     |     |-OtherFactor
+    |     |     |     |     |     |     |     |     |-OtherTerm
+    |     |     |     |     |     |     |     |-OtherRelE
+    |     |     |     |     |     |     |     |     |-CmpOp
+    |     |     |     |     |     |     |     |     |     |-LT
+    |     |     |     |     |     |     |     |     |-Exp
+    |     |     |     |     |     |     |     |     |     |-Term
+    |     |     |     |     |     |     |     |     |     |     |-Factor
+    |     |     |     |     |     |     |     |     |     |     |     |-INTC(6)
+    |     |     |     |     |     |     |     |     |     |     |-OtherFactor
+    |     |     |     |     |     |     |     |     |     |-OtherTerm
+    |     |     |     |     |     |     |-DO
+    |     |     |     |     |     |     |-StmList
+    |     |     |     |     |     |     |     |-Stm
+    |     |     |     |     |     |     |     |     |-ID(y)
+    |     |     |     |     |     |     |     |     |-AssCall
+    |     |     |     |     |     |     |     |     |     |-AssignmentRest
+    |     |     |     |     |     |     |     |     |     |     |-VariMore
+    |     |     |     |     |     |     |     |     |     |     |     |-LMIDPAREN
+    |     |     |     |     |     |     |     |     |     |     |     |-Exp
+    |     |     |     |     |     |     |     |     |     |     |     |     |-Term
+    |     |     |     |     |     |     |     |     |     |     |     |     |     |-Factor
+    |     |     |     |     |     |     |     |     |     |     |     |     |     |     |-Variable
+    |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |-ID(ss)
+    |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |-VariMore
+    |     |     |     |     |     |     |     |     |     |     |     |     |     |-OtherFactor
+    |     |     |     |     |     |     |     |     |     |     |     |     |-OtherTerm
+    |     |     |     |     |     |     |     |     |     |     |     |-RMIDPAREN
+    |     |     |     |     |     |     |     |     |     |     |-ASSIGN
+    |     |     |     |     |     |     |     |     |     |     |-Exp
+    |     |     |     |     |     |     |     |     |     |     |     |-Term
+    |     |     |     |     |     |     |     |     |     |     |     |     |-Factor
+    |     |     |     |     |     |     |     |     |     |     |     |     |     |-Variable
+    |     |     |     |     |     |     |     |     |     |     |     |     |     |     |-ID(ss)
+    |     |     |     |     |     |     |     |     |     |     |     |     |     |     |-VariMore
+    |     |     |     |     |     |     |     |     |     |     |     |     |-OtherFactor
+    |     |     |     |     |     |     |     |     |     |     |     |-OtherTerm
+    |     |     |     |     |     |     |     |-StmMore
+    |     |     |     |     |     |     |     |     |-SEMI
+    |     |     |     |     |     |     |     |     |-StmList
+    |     |     |     |     |     |     |     |     |     |-Stm
+    |     |     |     |     |     |     |     |     |     |     |-ID(x)
+    |     |     |     |     |     |     |     |     |     |     |-AssCall
+    |     |     |     |     |     |     |     |     |     |     |     |-AssignmentRest
+    |     |     |     |     |     |     |     |     |     |     |     |     |-VariMore
+    |     |     |     |     |     |     |     |     |     |     |     |     |-ASSIGN
+    |     |     |     |     |     |     |     |     |     |     |     |     |-Exp
+    |     |     |     |     |     |     |     |     |     |     |     |     |     |-Term
+    |     |     |     |     |     |     |     |     |     |     |     |     |     |     |-Factor
+    |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |-Variable
+    |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |-ID(y)
+    |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |-VariMore
+    |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |-LMIDPAREN
+    |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |-Exp
+    |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |-Term
+    |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |-Factor
+    |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |-Variable
+    |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |-ID(ss)
+    |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |-VariMore
+    |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |-OtherFactor
+    |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |-OtherTerm
+    |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |-RMIDPAREN
+    |     |     |     |     |     |     |     |     |     |     |     |     |     |     |-OtherFactor
+    |     |     |     |     |     |     |     |     |     |     |     |     |     |-OtherTerm
+    |     |     |     |     |     |     |     |     |     |-StmMore
+    |     |     |     |     |     |     |     |     |     |     |-SEMI
+    |     |     |     |     |     |     |     |     |     |     |-StmList
+    |     |     |     |     |     |     |     |     |     |     |     |-Stm
+    |     |     |     |     |     |     |     |     |     |     |     |     |-ID(sd)
+    |     |     |     |     |     |     |     |     |     |     |     |     |-AssCall
+    |     |     |     |     |     |     |     |     |     |     |     |     |     |-CallStmRest
+    |     |     |     |     |     |     |     |     |     |     |     |     |     |     |-LPAREN
+    |     |     |     |     |     |     |     |     |     |     |     |     |     |     |-ActParamList
+    |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |-Exp
+    |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |-Term
+    |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |-Factor
+    |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |-Variable
+    |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |-ID(x)
+    |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |-VariMore
+    |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |-OtherFactor
+    |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |-OtherTerm
+    |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |-ActParamMore
+    |     |     |     |     |     |     |     |     |     |     |     |     |     |     |-RPAREN
+    |     |     |     |     |     |     |     |     |     |     |     |-StmMore
+    |     |     |     |     |     |     |     |     |     |     |     |     |-SEMI
+    |     |     |     |     |     |     |     |     |     |     |     |     |-StmList
+    |     |     |     |     |     |     |     |     |     |     |     |     |     |-Stm
+    |     |     |     |     |     |     |     |     |     |     |     |     |     |     |-ID(ss)
+    |     |     |     |     |     |     |     |     |     |     |     |     |     |     |-AssCall
+    |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |-AssignmentRest
+    |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |-VariMore
+    |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |-ASSIGN
+    |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |-Exp
+    |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |-Term
+    |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |-Factor
+    |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |-Variable
+    |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |-ID(ss)
+    |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |-VariMore
+    |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |-OtherFactor
+    |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |-OtherTerm
+    |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |-AddOp
+    |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |-PLUS
+    |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |-Exp
+    |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |-Term
+    |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |-Factor
+    |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |-INTC(1)
+    |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |-OtherFactor
+    |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |-OtherTerm
+    |     |     |     |     |     |     |     |     |     |     |     |     |     |-StmMore
+    |     |     |     |     |     |     |-ENDWH
+    |     |     |     |     |-StmMore
+    |     |-END
+    |-DOT
+

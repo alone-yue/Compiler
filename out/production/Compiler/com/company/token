@@ -1,0 +1,78 @@
+PROGRAM            3  1
+ID         sd      3  2
+TYPE               4  1
+ID         i       4  2
+EQ                 4  3
+INTEGER            4  4
+SEMI               4  5
+ID         sarray  5  1
+EQ                 5  2
+ARRAY              5  3
+LMIDPAREN          5  4
+INTC       0       5  5
+UNDERANGE          5  6
+INTC       5       5  7
+RMIDPAREN          5  8
+OF                 5  9
+INTEGER            5 10
+SEMI               5 11
+VAR                6  1
+ID         i       6  2
+ID         x       6  3
+SEMI               6  4
+ID         sarray  7  1
+ID         y       7  2
+SEMI               7  3
+INTEGER            8  1
+ID         ss      8  2
+SEMI               8  3
+PROCEDURE          9  1
+ID         sd      9  2
+LPAREN             9  3
+INTEGER            9  4
+ID         a       9  5
+RPAREN             9  6
+SEMI               9  7
+BEGIN             10  1
+WRITE             11  1
+LPAREN            11  2
+ID         a      11  3
+RPAREN            11  4
+END               12  1
+BEGIN             13  1
+ID         ss     14  1
+ASSIGN            14  2
+INTC       0      14  3
+SEMI              14  4
+WHILE             15  1
+ID         ss     15  2
+LT                15  3
+INTC       6      15  4
+DO                15  5
+ID         y      16  1
+LMIDPAREN         16  2
+ID         ss     16  3
+RMIDPAREN         16  4
+ASSIGN            16  5
+ID         ss     16  6
+SEMI              16  7
+ID         x      17  1
+ASSIGN            17  2
+ID         y      17  3
+LMIDPAREN         17  4
+ID         ss     17  5
+RMIDPAREN         17  6
+SEMI              17  7
+ID         sd     18  1
+LPAREN            18  2
+ID         x      18  3
+RPAREN            18  4
+SEMI              18  5
+ID         ss     19  1
+ASSIGN            19  2
+ID         ss     19  3
+PLUS              19  4
+INTC       1      19  5
+ENDWH             20  1
+END               21  1
+DOT               21  2
